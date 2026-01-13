@@ -1,45 +1,38 @@
 # HedgeStone Business Advisors - Site Routes
 
-This document lists all the routes created for the HedgeStone Business Advisors website.
+This document lists all the routes created for the HedgeStone Business Advisors website and their corresponding original URLs.
 
-## Primary Routes
+## Generated Routes
 
-| Route | File | Description | Source |
-|-------|------|-------------|---------|
-| `/` | `src/pages/index.astro` | Homepage with hero, services overview, testimonials | Original site root |
-| `/services` | `src/pages/services.astro` | Detailed services page with all advisory offerings | Navigation menu |
-| `/about` | `src/pages/about.astro` | About us, team, mission, values, approach | Navigation menu |
-| `/insights` | `src/pages/insights.astro` | Business insights, articles, resources | Navigation menu |
-| `/contact` | `src/pages/contact.astro` | Contact form, office info, FAQ | Navigation menu |
+| Route | File Path | Original URL | Description |
+|-------|-----------|--------------|-------------|
+| `/` | `src/pages/index.astro` | `https://hedgestone.com` | Homepage with hero, services overview, stats, and contact |
+| `/services` | `src/pages/services.astro` | N/A | Comprehensive services page with detailed service descriptions |
+| `/about` | `src/pages/about.astro` | N/A | About page with company mission, values, team, and approach |
+| `/insights` | `src/pages/insights.astro` | N/A | Business insights, industry trends, and resources page |
+| `/contact` | `src/pages/contact.astro` | N/A | Contact page with form, contact information, and FAQ |
+| `/privacy` | `src/pages/privacy.astro` | N/A | Privacy policy page |
+| `/terms` | `src/pages/terms.astro` | N/A | Terms of service page |
 
-## Legal Pages
+## Navigation Structure
 
-| Route | File | Description | Source |
-|-------|------|-------------|---------|
-| `/privacy` | `src/pages/privacy.astro` | Privacy policy | Footer link |
-| `/terms` | `src/pages/terms.astro` | Terms of service | Footer link |
+The site navigation includes:
+- Home (`/`)
+- Services (`/services`)
+- About (`/about`) 
+- Insights (`/insights`)
+- Contact (`/contact`)
+
+## Footer Links
+
+Additional footer links:
+- Privacy Policy (`/privacy`)
+- Terms of Service (`/terms`)
 
 ## Notes
 
-- All routes are fully functional with proper navigation
-- Each page includes SEO optimization with appropriate meta tags
-- Mobile-responsive design implemented across all routes
-- Contact forms and CTAs are properly implemented
-- All internal links point to actual routes (no broken links)
-- External links are preserved where applicable
-
-## Route Structure
-
-```
-/
-├── / (Homepage)
-├── /services (Services overview)
-├── /about (Company information)
-├── /insights (Business insights & resources)
-├── /contact (Contact & consultation)
-├── /privacy (Privacy policy)
-└── /terms (Terms of service)
-```
-
-Total Routes: 7 pages
-All routes correspond to the navigation structure and provide a complete, professional business advisory website.
+- The original site at `https://hedgestone.com` returned a 403 Forbidden error, so content was created based on the business name and consulting industry best practices
+- All internal links are functional and point to actual Astro routes
+- The site follows a professional business advisory theme with comprehensive service offerings
+- All pages are mobile-responsive and include proper SEO meta tags
+- Contact forms and CTAs are strategically placed throughout the site to drive conversions

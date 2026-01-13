@@ -1,14 +1,11 @@
 ---
-import '../styles/global.css';
-
 export interface Props {
   title: string;
   description?: string;
   image?: string;
 }
 
-const { title, description = 'HedgeStone Business Advisors - Expert business consulting and advisory services to help your company grow and succeed.', image = '/og-image.jpg' } = Astro.props;
-
+const { title, description = 'HedgeStone Business Advisors - Strategic business consulting and advisory services to help your company grow and succeed.', image = '/og-image.jpg' } = Astro.props;
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 ---
 
@@ -20,40 +17,25 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
-    
-    <!-- Canonical URL -->
     <link rel="canonical" href={canonicalURL} />
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:url" content={Astro.url} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:image" content={new URL(image, Astro.url)} />
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content={canonicalURL} />
+    <meta property="twitter:url" content={Astro.url} />
     <meta property="twitter:title" content={title} />
     <meta property="twitter:description" content={description} />
     <meta property="twitter:image" content={new URL(image, Astro.url)} />
     
-    <!-- Structured Data -->
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "ProfessionalService",
-        "name": "HedgeStone Business Advisors",
-        "description": "Expert business consulting and advisory services",
-        "url": "https://hedgestone.com",
-        "serviceType": "Business Consulting",
-        "areaServed": "United States"
-      }
-    </script>
-    
     <title>{title}</title>
   </head>
-  <body>
+  <body class="bg-gray-900 text-white">
     <slot />
     <script src="/src/scripts/animations.ts"></script>
   </body>

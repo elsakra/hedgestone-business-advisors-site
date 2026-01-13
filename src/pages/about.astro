@@ -4,121 +4,151 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 ---
 
-<Layout title="About Us - HedgeStone Business Advisors" description="Learn about HedgeStone Business Advisors' experienced team, our mission, values, and track record of helping businesses achieve sustainable growth and success.">
+<Layout title="About Us - HedgeStone Business Advisors" description="Learn about HedgeStone Business Advisors' mission, values, and experienced team of business consultants dedicated to helping companies achieve sustainable growth.">
   <Header />
   <main class="pt-16">
     <!-- Hero Section -->
-    <section class="section-padding bg-slate-800">
-      <div class="container">
-        <div class="text-center text-white animate-section">
-          <h1 class="text-5xl lg:text-6xl font-bold mb-6">
-            About <span class="text-blue-400">HedgeStone</span>
-          </h1>
-          <p class="text-xl text-gray-300 max-w-3xl mx-auto">
-            For over 15 years, we've been helping businesses navigate complex challenges and unlock their full potential through expert advisory services and strategic guidance.
-          </p>
+    <section class="section-padding bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
+      <div class="container-custom">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div class="animate-fade-in">
+            <h1 class="text-5xl lg:text-6xl font-bold mb-6">
+              Transforming Businesses 
+              <span class="text-primary-400">Since 2008</span>
+            </h1>
+            <p class="text-xl text-gray-300 leading-relaxed mb-8">
+              HedgeStone Business Advisors was founded with a simple mission: to help businesses unlock their full potential through strategic guidance, operational excellence, and innovative solutions.
+            </p>
+            <div class="grid grid-cols-2 gap-6">
+              <div>
+                <div class="text-3xl font-bold text-primary-400 mb-2">200+</div>
+                <div class="text-gray-300">Clients Served</div>
+              </div>
+              <div>
+                <div class="text-3xl font-bold text-primary-400 mb-2">15+</div>
+                <div class="text-gray-300">Years Experience</div>
+              </div>
+              <div>
+                <div class="text-3xl font-bold text-primary-400 mb-2">$50M+</div>
+                <div class="text-gray-300">Revenue Generated</div>
+              </div>
+              <div>
+                <div class="text-3xl font-bold text-primary-400 mb-2">98%</div>
+                <div class="text-gray-300">Success Rate</div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="animate-fade-in animate-stagger-1">
+            <div class="bg-gradient-to-br from-primary-500/20 to-purple-500/20 rounded-2xl p-8">
+              <h2 class="text-2xl font-semibold text-white mb-6">Our Mission</h2>
+              <p class="text-gray-300 text-lg leading-relaxed mb-6">
+                To empower businesses with strategic insights, operational excellence, and innovative solutions that drive sustainable growth and long-term success.
+              </p>
+              <div class="space-y-4">
+                <div class="flex items-center space-x-3">
+                  <svg class="w-6 h-6 text-primary-400" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                  </svg>
+                  <span class="text-white font-medium">Results-Driven Approach</span>
+                </div>
+                <div class="flex items-center space-x-3">
+                  <svg class="w-6 h-6 text-primary-400" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                  </svg>
+                  <span class="text-white font-medium">Long-term Partnerships</span>
+                </div>
+                <div class="flex items-center space-x-3">
+                  <svg class="w-6 h-6 text-primary-400" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                  </svg>
+                  <span class="text-white font-medium">Industry Expertise</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
     
-    <!-- Mission & Vision -->
-    <section class="section-padding bg-white">
-      <div class="container">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div class="animate-section">
-            <h2 class="text-4xl font-bold text-gray-900 mb-6">Our Mission</h2>
-            <p class="text-lg text-gray-600 mb-6">
-              To empower businesses with the strategic insights, operational expertise, and financial guidance they need to achieve sustainable growth and create lasting value for all stakeholders.
+    <!-- Values Section -->
+    <section class="section-padding bg-gray-800">
+      <div class="container-custom">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl lg:text-5xl font-bold mb-6 animate-fade-in">
+            Our Core 
+            <span class="text-primary-400">Values</span>
+          </h2>
+          <p class="text-xl text-gray-300 max-w-3xl mx-auto animate-fade-in animate-stagger-1">
+            These principles guide everything we do and shape how we work with our clients.
+          </p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-gray-900 rounded-xl p-8 text-center animate-fade-in">
+            <div class="w-16 h-16 bg-primary-500 rounded-full flex items-center justify-center mx-auto mb-6">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-semibold text-white mb-4">Integrity</h3>
+            <p class="text-gray-300 leading-relaxed">
+              We operate with the highest ethical standards, providing honest assessments and transparent communication in all our client relationships.
             </p>
-            <p class="text-lg text-gray-600 mb-8">
-              We believe that every business has untapped potential. Our role is to identify opportunities, overcome challenges, and implement solutions that drive meaningful results.
-            </p>
-            
-            <h3 class="text-2xl font-bold text-gray-900 mb-4">Our Values</h3>
-            <ul class="space-y-3">
-              <li class="flex items-center space-x-3">
-                <div class="w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
-                  <svg class="w-4 h-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                  </svg>
-                </div>
-                <span class="text-gray-700 font-medium">Integrity in every engagement</span>
-              </li>
-              <li class="flex items-center space-x-3">
-                <div class="w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
-                  <svg class="w-4 h-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                  </svg>
-                </div>
-                <span class="text-gray-700 font-medium">Excellence in service delivery</span>
-              </li>
-              <li class="flex items-center space-x-3">
-                <div class="w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
-                  <svg class="w-4 h-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                  </svg>
-                </div>
-                <span class="text-gray-700 font-medium">Collaboration and partnership</span>
-              </li>
-              <li class="flex items-center space-x-3">
-                <div class="w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
-                  <svg class="w-4 h-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                  </svg>
-                </div>
-                <span class="text-gray-700 font-medium">Innovation and continuous improvement</span>
-              </li>
-            </ul>
           </div>
           
-          <div class="animate-section">
-            <div class="grid grid-cols-2 gap-6">
-              <div class="card text-center">
-                <div class="text-4xl font-bold text-blue-600 mb-2">15+</div>
-                <div class="text-gray-600">Years Experience</div>
-              </div>
-              <div class="card text-center">
-                <div class="text-4xl font-bold text-green-600 mb-2">50+</div>
-                <div class="text-gray-600">Companies Advised</div>
-              </div>
-              <div class="card text-center">
-                <div class="text-4xl font-bold text-purple-600 mb-2">$2B+</div>
-                <div class="text-gray-600">Value Created</div>
-              </div>
-              <div class="card text-center">
-                <div class="text-4xl font-bold text-orange-600 mb-2">94%</div>
-                <div class="text-gray-600">Success Rate</div>
-              </div>
+          <div class="bg-gray-900 rounded-xl p-8 text-center animate-fade-in animate-stagger-1">
+            <div class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-6">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+              </svg>
             </div>
+            <h3 class="text-2xl font-semibold text-white mb-4">Excellence</h3>
+            <p class="text-gray-300 leading-relaxed">
+              We strive for excellence in every project, delivering superior results that exceed expectations and drive meaningful business impact.
+            </p>
+          </div>
+          
+          <div class="bg-gray-900 rounded-xl p-8 text-center animate-fade-in animate-stagger-2">
+            <div class="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-6">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-semibold text-white mb-4">Collaboration</h3>
+            <p class="text-gray-300 leading-relaxed">
+              We believe in true partnership, working closely with our clients to understand their unique challenges and co-create solutions.
+            </p>
           </div>
         </div>
       </div>
     </section>
     
     <!-- Team Section -->
-    <section class="section-padding bg-gray-50">
-      <div class="container">
-        <div class="text-center mb-16 animate-section">
-          <h2 class="text-4xl font-bold text-gray-900 mb-6">
-            Meet Our <span class="text-blue-600">Expert Team</span>
+    <section class="section-padding bg-gray-900">
+      <div class="container-custom">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl lg:text-5xl font-bold mb-6 animate-fade-in">
+            Meet Our 
+            <span class="text-primary-400">Leadership Team</span>
           </h2>
-          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-            Our team of experienced advisors brings deep industry knowledge and proven methodologies to every engagement.
+          <p class="text-xl text-gray-300 max-w-3xl mx-auto animate-fade-in animate-stagger-1">
+            Our experienced team brings decades of combined expertise from leading consulting firms and Fortune 500 companies.
           </p>
         </div>
         
-        <div class="animate-cards grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div class="card text-center">
-            <div class="w-24 h-24 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
-              <span class="text-2xl font-bold text-blue-600">JD</span>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="bg-gray-800 rounded-xl p-8 text-center animate-fade-in">
+            <div class="w-24 h-24 bg-primary-500 rounded-full mx-auto mb-6 flex items-center justify-center">
+              <span class="text-2xl font-bold text-white">MJ</span>
             </div>
-            <h3 class="text-xl font-bold text-gray-900 mb-2">John Davidson</h3>
-            <p class="text-blue-600 font-medium mb-4">Managing Partner</p>
-            <p class="text-gray-600 mb-4">
-              Former McKinsey partner with 20+ years of experience in strategic consulting and business transformation.
+            <h3 class="text-xl font-semibold text-white mb-2">Michael Johnson</h3>
+            <p class="text-primary-400 mb-4">Managing Partner & CEO</p>
+            <p class="text-gray-300 text-sm leading-relaxed mb-4">
+              Former McKinsey & Company partner with 20+ years of experience in strategic planning and organizational transformation. MBA from Wharton.
             </p>
             <div class="flex justify-center space-x-3">
-              <a href="#" class="text-gray-400 hover:text-blue-600 transition-colors">
+              <a href="#" class="text-gray-400 hover:text-primary-400 transition-colors">
                 <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
                 </svg>
@@ -126,17 +156,17 @@ import Footer from '../components/Footer.astro';
             </div>
           </div>
           
-          <div class="card text-center">
-            <div class="w-24 h-24 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
-              <span class="text-2xl font-bold text-green-600">SR</span>
+          <div class="bg-gray-800 rounded-xl p-8 text-center animate-fade-in animate-stagger-1">
+            <div class="w-24 h-24 bg-green-500 rounded-full mx-auto mb-6 flex items-center justify-center">
+              <span class="text-2xl font-bold text-white">SC</span>
             </div>
-            <h3 class="text-xl font-bold text-gray-900 mb-2">Sarah Rodriguez</h3>
-            <p class="text-green-600 font-medium mb-4">Senior Partner, Financial Advisory</p>
-            <p class="text-gray-600 mb-4">
-              Former Goldman Sachs VP with expertise in corporate finance, M&A, and capital markets across multiple industries.
+            <h3 class="text-xl font-semibold text-white mb-2">Sarah Chen</h3>
+            <p class="text-primary-400 mb-4">Senior Partner, Operations</p>
+            <p class="text-gray-300 text-sm leading-relaxed mb-4">
+              Former Bain & Company principal specializing in operational excellence and digital transformation. 15+ years in manufacturing and technology sectors.
             </p>
             <div class="flex justify-center space-x-3">
-              <a href="#" class="text-gray-400 hover:text-green-600 transition-colors">
+              <a href="#" class="text-gray-400 hover:text-primary-400 transition-colors">
                 <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
                 </svg>
@@ -144,17 +174,17 @@ import Footer from '../components/Footer.astro';
             </div>
           </div>
           
-          <div class="card text-center">
-            <div class="w-24 h-24 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6">
-              <span class="text-2xl font-bold text-purple-600">MT</span>
+          <div class="bg-gray-800 rounded-xl p-8 text-center animate-fade-in animate-stagger-2">
+            <div class="w-24 h-24 bg-blue-500 rounded-full mx-auto mb-6 flex items-center justify-center">
+              <span class="text-2xl font-bold text-white">DR</span>
             </div>
-            <h3 class="text-xl font-bold text-gray-900 mb-2">Michael Thompson</h3>
-            <p class="text-purple-600 font-medium mb-4">Partner, Operations Excellence</p>
-            <p class="text-gray-600 mb-4">
-              Former Bain & Company principal specializing in operational transformation and performance improvement initiatives.
+            <h3 class="text-xl font-semibold text-white mb-2">David Rodriguez</h3>
+            <p class="text-primary-400 mb-4">Senior Partner, Finance</p>
+            <p class="text-gray-300 text-sm leading-relaxed mb-4">
+              Former Goldman Sachs VP and Deloitte senior manager with expertise in M&A, financial restructuring, and capital markets. CPA and CFA certified.
             </p>
             <div class="flex justify-center space-x-3">
-              <a href="#" class="text-gray-400 hover:text-purple-600 transition-colors">
+              <a href="#" class="text-gray-400 hover:text-primary-400 transition-colors">
                 <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
                 </svg>
@@ -166,127 +196,113 @@ import Footer from '../components/Footer.astro';
     </section>
     
     <!-- Approach Section -->
-    <section class="section-padding bg-white">
-      <div class="container">
-        <div class="text-center mb-16 animate-section">
-          <h2 class="text-4xl font-bold text-gray-900 mb-6">
-            Our <span class="text-blue-600">Approach</span>
-          </h2>
-          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-            We combine deep industry expertise with proven methodologies to deliver results that matter.
-          </p>
-        </div>
-        
-        <div class="animate-cards grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <div class="text-center">
-            <div class="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center mx-auto mb-6">
-              <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
-              </svg>
-            </div>
-            <h3 class="text-xl font-bold text-gray-900 mb-4">Deep Analysis</h3>
-            <p class="text-gray-600">
-              Comprehensive assessment of your business, market position, and growth opportunities.
+    <section class="section-padding bg-gray-800">
+      <div class="container-custom">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div class="animate-fade-in">
+            <h2 class="text-4xl lg:text-5xl font-bold mb-6">
+              Our 
+              <span class="text-primary-400">Approach</span>
+            </h2>
+            <p class="text-xl text-gray-300 leading-relaxed mb-8">
+              We believe that successful consulting is built on deep understanding, collaborative partnership, and measurable results. Our methodology combines proven frameworks with innovative thinking.
             </p>
+            
+            <div class="space-y-6">
+              <div class="flex items-start space-x-4">
+                <div class="w-8 h-8 bg-primary-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <span class="text-white font-semibold text-sm">1</span>
+                </div>
+                <div>
+                  <h3 class="text-lg font-semibold text-white mb-2">Listen & Understand</h3>
+                  <p class="text-gray-400">We start by deeply understanding your business, culture, and unique challenges.</p>
+                </div>
+              </div>
+              
+              <div class="flex items-start space-x-4">
+                <div class="w-8 h-8 bg-primary-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <span class="text-white font-semibold text-sm">2</span>
+                </div>
+                <div>
+                  <h3 class="text-lg font-semibold text-white mb-2">Analyze & Strategize</h3>
+                  <p class="text-gray-400">We apply rigorous analysis and proven methodologies to develop tailored solutions.</p>
+                </div>
+              </div>
+              
+              <div class="flex items-start space-x-4">
+                <div class="w-8 h-8 bg-primary-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <span class="text-white font-semibold text-sm">3</span>
+                </div>
+                <div>
+                  <h3 class="text-lg font-semibold text-white mb-2">Execute & Deliver</h3>
+                  <p class="text-gray-400">We work alongside your team to implement solutions and ensure lasting results.</p>
+                </div>
+              </div>
+            </div>
           </div>
           
-          <div class="text-center">
-            <div class="w-16 h-16 bg-green-100 rounded-xl flex items-center justify-center mx-auto mb-6">
-              <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
-              </svg>
+          <div class="animate-fade-in animate-stagger-1">
+            <div class="bg-gradient-to-br from-primary-500/20 to-purple-500/20 rounded-2xl p-8">
+              <h3 class="text-2xl font-semibold text-white mb-6">Why Clients Choose Us</h3>
+              
+              <div class="space-y-6">
+                <div class="flex items-center space-x-4">
+                  <div class="w-12 h-12 bg-primary-500 rounded-lg flex items-center justify-center">
+                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 class="text-white font-semibold">Proven Results</h4>
+                    <p class="text-gray-300 text-sm">Track record of delivering measurable business impact</p>
+                  </div>
+                </div>
+                
+                <div class="flex items-center space-x-4">
+                  <div class="w-12 h-12 bg-green-500 rounded-lg flex items-center justify-center">
+                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 class="text-white font-semibold">Industry Expertise</h4>
+                    <p class="text-gray-300 text-sm">Deep knowledge across multiple sectors and functions</p>
+                  </div>
+                </div>
+                
+                <div class="flex items-center space-x-4">
+                  <div class="w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center">
+                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 class="text-white font-semibold">Partnership Focus</h4>
+                    <p class="text-gray-300 text-sm">Long-term relationships built on trust and mutual success</p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <h3 class="text-xl font-bold text-gray-900 mb-4">Strategic Thinking</h3>
-            <p class="text-gray-600">
-              Innovative solutions tailored to your specific challenges and objectives.
-            </p>
-          </div>
-          
-          <div class="text-center">
-            <div class="w-16 h-16 bg-purple-100 rounded-xl flex items-center justify-center mx-auto mb-6">
-              <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
-              </svg>
-            </div>
-            <h3 class="text-xl font-bold text-gray-900 mb-4">Collaborative Execution</h3>
-            <p class="text-gray-600">
-              Working alongside your team to ensure successful implementation and adoption.
-            </p>
-          </div>
-          
-          <div class="text-center">
-            <div class="w-16 h-16 bg-orange-100 rounded-xl flex items-center justify-center mx-auto mb-6">
-              <svg class="w-8 h-8 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
-              </svg>
-            </div>
-            <h3 class="text-xl font-bold text-gray-900 mb-4">Measurable Results</h3>
-            <p class="text-gray-600">
-              Tracking progress and optimizing performance to ensure sustainable success.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-    <!-- Industries Section -->
-    <section class="section-padding bg-gray-50">
-      <div class="container">
-        <div class="text-center mb-16 animate-section">
-          <h2 class="text-4xl font-bold text-gray-900 mb-6">
-            Industries We <span class="text-blue-600">Serve</span>
-          </h2>
-          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-            Our expertise spans across multiple industries, allowing us to bring best practices and insights from diverse sectors.
-          </p>
-        </div>
-        
-        <div class="animate-cards grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
-          <div class="card text-center p-4">
-            <div class="text-2xl mb-2">💻</div>
-            <div class="text-sm font-medium text-gray-700">Technology</div>
-          </div>
-          <div class="card text-center p-4">
-            <div class="text-2xl mb-2">🏥</div>
-            <div class="text-sm font-medium text-gray-700">Healthcare</div>
-          </div>
-          <div class="card text-center p-4">
-            <div class="text-2xl mb-2">🏭</div>
-            <div class="text-sm font-medium text-gray-700">Manufacturing</div>
-          </div>
-          <div class="card text-center p-4">
-            <div class="text-2xl mb-2">💰</div>
-            <div class="text-sm font-medium text-gray-700">Financial Services</div>
-          </div>
-          <div class="card text-center p-4">
-            <div class="text-2xl mb-2">🛒</div>
-            <div class="text-sm font-medium text-gray-700">Retail</div>
-          </div>
-          <div class="card text-center p-4">
-            <div class="text-2xl mb-2">⚡</div>
-            <div class="text-sm font-medium text-gray-700">Energy</div>
           </div>
         </div>
       </div>
     </section>
     
     <!-- CTA Section -->
-    <section class="section-padding bg-blue-600">
-      <div class="container">
-        <div class="text-center text-white animate-section">
-          <h2 class="text-4xl font-bold mb-6">
-            Ready to Work Together?
-          </h2>
-          <p class="text-xl mb-8 max-w-2xl mx-auto">
-            Let's discuss how our expertise can help your business achieve its full potential.
-          </p>
-          <a href="/contact" class="btn-secondary text-lg px-8 py-4">
-            Start the Conversation
-            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
-            </svg>
-          </a>
-        </div>
+    <section class="section-padding bg-gradient-to-r from-primary-500 to-purple-600">
+      <div class="container-custom text-center">
+        <h2 class="text-4xl lg:text-5xl font-bold text-white mb-6 animate-fade-in">
+          Ready to Work Together?
+        </h2>
+        <p class="text-xl text-white/90 mb-8 max-w-2xl mx-auto animate-fade-in animate-stagger-1">
+          Let's discuss how our experience and expertise can help your business achieve its goals.
+        </p>
+        <a href="/contact" class="bg-white text-primary-600 hover:bg-gray-100 px-8 py-4 rounded-lg font-semibold text-lg transition-colors inline-flex items-center gap-2 animate-fade-in animate-stagger-2">
+          Start the Conversation
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+          </svg>
+        </a>
       </div>
     </section>
   </main>
