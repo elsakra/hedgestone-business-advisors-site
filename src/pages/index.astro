@@ -2,20 +2,18 @@
 import Layout from '../layouts/Layout.astro';
 import Hero from '../components/Hero.astro';
 import Services from '../components/Services.astro';
-import Expertise from '../components/Expertise.astro';
-import Team from '../components/Team.astro';
-import Contact from '../components/Contact.astro';
+import Credentials from '../components/Credentials.astro';
+import CTA from '../components/CTA.astro';
 import Footer from '../components/Footer.astro';
 import '../styles/global.css';
 ---
 
-<Layout title="HedgeStone Business Advisors - Strategic Growth Advisory">
-  <main>
+<Layout title="HedgeStone Business Advisors - Sophisticated Investment Solutions">
+  <main data-layout-pattern="asymmetric" data-card-style="elevated" data-button-style="pill">
     <Hero />
     <Services />
-    <Expertise />
-    <Team />
-    <Contact />
+    <Credentials />
+    <CTA />
     <Footer />
   </main>
 </Layout>

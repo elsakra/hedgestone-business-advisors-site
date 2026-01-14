@@ -6,17 +6,18 @@ export default {
         sans: ['Inter', 'system-ui', 'sans-serif'],
       },
       colors: {
-        cream: '#F5F1E8',
-        gold: '#D4AF37',
+        cream: '#FAF8F4',
+        gold: '#C9A961',
       },
       letterSpacing: {
-        tighter: '-0.03em',
+        tighter: '-0.04em',
         tight: '-0.02em',
+        wide: '0.05em',
+        wider: '0.1em',
       },
       animation: {
-        'fade-up': 'fadeUp 0.7s ease-out',
-        'fade-in': 'fadeIn 0.7s ease-out',
-        'scale-in': 'scaleIn 0.7s ease-out',
+        'fade-up': 'fadeUp 0.6s ease-out',
+        'fade-in': 'fadeIn 0.4s ease-out',
       },
       keyframes: {
         fadeUp: {
@@ -26,10 +27,6 @@ export default {
         fadeIn: {
           '0%': { opacity: '0' },
           '100%': { opacity: '1' },
-        },
-        scaleIn: {
-          '0%': { opacity: '0', transform: 'scale(0.9)' },
-          '100%': { opacity: '1', transform: 'scale(1)' },
         },
       },
     },
