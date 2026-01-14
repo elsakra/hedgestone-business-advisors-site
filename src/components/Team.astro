@@ -2,67 +2,82 @@
 const team = [
   {
     name: "Michael Harrison",
-    role: "Founder & CEO",
-    bio: "25+ years transforming businesses across Fortune 500 and emerging growth companies.",
-    expertise: ["Strategic Planning", "M&A", "Turnarounds"],
-    image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=400&h=400"
+    role: "Managing Partner",
+    bio: "25+ years in strategic advisory and private equity",
+    image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop"
   },
   {
     name: "Sarah Chen",
-    role: "Managing Partner",
-    bio: "Former McKinsey partner with deep expertise in operational transformation.",
-    expertise: ["Operations", "Digital Transformation", "Analytics"],
-    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=400&h=400"
+    role: "Partner, M&A",
+    bio: "Former Goldman Sachs, 15+ years in investment banking",
+    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop"
   },
   {
-    name: "David Reeves",
-    role: "Senior Advisor",
-    bio: "CFO experience at multiple unicorns, expert in scaling financial operations.",
-    expertise: ["Financial Strategy", "Fundraising", "IPO Readiness"],
-    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=400&h=400"
+    name: "David Kumar",
+    role: "Partner, Operations",
+    bio: "Ex-McKinsey, specialist in operational transformation",
+    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop"
   },
   {
-    name: "Jennifer Walsh",
-    role: "Partner",
-    bio: "Leadership development expert who has coached 100+ C-suite executives.",
-    expertise: ["Executive Coaching", "Culture", "Team Building"],
-    image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=400&h=400"
+    name: "Emily Rodriguez",
+    role: "Partner, Digital",
+    bio: "Tech industry veteran, digital strategy expert",
+    image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=400&fit=crop"
   }
 ];
 ---
 
-<section id="team" class="py-24 md:py-32 lg:py-40 bg-stone-50">
-  <div class="max-w-7xl mx-auto px-6 lg:px-8">
-    <div class="text-center mb-16">
-      <h2 class="text-5xl md:text-6xl font-black tracking-tight text-stone-900 mb-6 animate-on-scroll">
-        Meet Your
-        <span class="gradient-text">Advisors</span>
+<section id="team" class="py-20 lg:py-32 bg-slate-50">
+  <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
+    <div class="text-center mb-16 space-y-4">
+      <p class="text-sm text-gray-500 tracking-wider uppercase animate-on-scroll">Our Leadership</p>
+      <h2 class="text-5xl lg:text-6xl font-bold tracking-tight animate-on-scroll stagger-1">
+        TRUSTED ADVISORS
       </h2>
-      <p class="text-xl text-stone-600 max-w-3xl mx-auto animate-on-scroll animate-on-scroll-delay-100">
-        Seasoned executives and industry leaders dedicated to your success.
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto animate-on-scroll stagger-2">
+        A team of seasoned professionals dedicated to your success
       </p>
     </div>
     
     <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
       {team.map((member, index) => (
-        <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 animate-on-scroll animate-on-scroll-delay-{(index + 1) * 100}">
-          <img 
-            src={member.image}
-            alt={member.name}
-            class="w-24 h-24 rounded-full object-cover mb-6"
-          />
-          <h3 class="text-xl font-bold text-stone-900 mb-1">{member.name}</h3>
-          <p class="text-amber-600 font-medium mb-3">{member.role}</p>
-          <p class="text-stone-600 text-sm mb-4">{member.bio}</p>
-          <div class="space-y-1">
-            {member.expertise.map(skill => (
-              <span class="inline-block text-xs bg-stone-100 text-stone-700 px-2 py-1 rounded-full mr-1 mb-1">
-                {skill}
-              </span>
-            ))}
+        <div class="group animate-on-scroll stagger-child">
+          <div class="relative overflow-hidden rounded-2xl mb-6">
+            <img 
+              src={member.image} 
+              alt={member.name}
+              class="w-full aspect-square object-cover group-hover:scale-110 transition-transform duration-500"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
           </div>
+          <h3 class="text-xl font-bold mb-1">{member.name}</h3>
+          <p class="text-amber-600 font-medium mb-2">{member.role}</p>
+          <p class="text-gray-600 text-sm leading-relaxed">{member.bio}</p>
         </div>
       ))}
+    </div>
+    
+    <!-- Team culture image -->
+    <div class="mt-20 grid lg:grid-cols-2 gap-12 items-center">
+      <div class="animate-on-scroll">
+        <h3 class="text-3xl font-bold mb-4">A Culture of Excellence</h3>
+        <p class="text-lg text-gray-600 leading-relaxed mb-6">
+          Our team combines deep industry expertise with a collaborative approach that puts your success first. We're not just advisors – we're partners in your growth journey.
+        </p>
+        <a href="#contact" class="inline-flex items-center gap-3 px-8 py-4 text-lg font-semibold bg-black text-white rounded-full hover:scale-105 hover:shadow-xl transition-all duration-300">
+          Meet the Full Team
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+          </svg>
+        </a>
+      </div>
+      <div class="relative animate-on-scroll">
+        <img 
+          src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&h=600&fit=crop" 
+          alt="Team collaboration"
+          class="rounded-2xl shadow-2xl"
+        />
+      </div>
     </div>
   </div>
 </section>
