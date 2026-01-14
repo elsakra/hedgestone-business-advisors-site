@@ -1,57 +1,62 @@
 ---
 const industries = [
-  { name: "Technology", value: "95%" },
-  { name: "Financial Services", value: "88%" },
-  { name: "Healthcare", value: "82%" },
-  { name: "Manufacturing", value: "76%" }
-];
-
-const stats = [
-  { value: "$2.8B", label: "Transaction Value" },
-  { value: "150+", label: "Engagements" },
-  { value: "98%", label: "Client Success Rate" },
-  { value: "25+", label: "Years Experience" }
+  { name: "Technology", growth: "+127%", clients: 45 },
+  { name: "Healthcare", growth: "+89%", clients: 32 },
+  { name: "Manufacturing", growth: "+76%", clients: 28 },
+  { name: "Financial Services", growth: "+94%", clients: 38 },
+  { name: "Retail & E-commerce", growth: "+112%", clients: 41 },
+  { name: "Professional Services", growth: "+83%", clients: 29 }
 ];
 ---
 
-<section id="expertise" class="py-24 md:py-32 lg:py-40 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white overflow-hidden relative">
+<section id="expertise" class="py-24 md:py-32 lg:py-40 bg-gradient-to-br from-stone-900 to-stone-800 text-white relative overflow-hidden">
   <!-- Background texture -->
   <div class="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:64px_64px]"></div>
-  
-  <!-- Gradient orbs -->
-  <div class="absolute top-1/2 -left-1/4 w-[500px] h-[500px] bg-emerald-600/20 rounded-full blur-[120px]"></div>
-  <div class="absolute bottom-1/2 -right-1/4 w-[400px] h-[400px] bg-emerald-600/10 rounded-full blur-[100px]"></div>
+  <div class="absolute top-1/4 right-0 w-96 h-96 bg-amber-500/10 rounded-full blur-3xl"></div>
   
   <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
     <div class="grid lg:grid-cols-2 gap-16 items-center">
       <div>
-        <h2 class="text-4xl md:text-5xl font-bold tracking-tight mb-6 animate-on-scroll">
-          Deep Industry Expertise
+        <h2 class="text-5xl md:text-6xl font-black tracking-tight mb-6 animate-on-scroll">
+          Industry
+          <span class="text-amber-400">Expertise</span>
         </h2>
-        <p class="text-xl text-slate-300 mb-8 animate-on-scroll">
-          Our team brings decades of experience across key sectors, delivering insights that drive transformative outcomes.
+        <p class="text-xl text-stone-300 mb-8 animate-on-scroll animate-on-scroll-delay-100">
+          Deep sector knowledge combined with proven methodologies deliver exceptional results across industries.
         </p>
-        
-        <div class="space-y-6">
-          {industries.map((industry) => (
-            <div class="animate-on-scroll">
-              <div class="flex justify-between mb-2">
-                <span class="font-medium">{industry.name}</span>
-                <span class="text-emerald-400">{industry.value}</span>
-              </div>
-              <div class="w-full bg-slate-700 rounded-full h-2">
-                <div class="bg-gradient-to-r from-emerald-600 to-emerald-400 h-2 rounded-full transition-all duration-1000" style={`width: ${industry.value}`}></div>
-              </div>
+        <div class="grid grid-cols-2 gap-8 mb-8">
+          <div class="animate-on-scroll animate-on-scroll-delay-200">
+            <div class="text-4xl font-black text-amber-400 mb-2">
+              <span class="counter" data-target="213">0</span>+
             </div>
-          ))}
+            <p class="text-stone-400">Clients Served</p>
+          </div>
+          <div class="animate-on-scroll animate-on-scroll-delay-300">
+            <div class="text-4xl font-black text-amber-400 mb-2">
+              <span class="counter" data-target="92">0</span>%
+            </div>
+            <p class="text-stone-400">Average Growth</p>
+          </div>
         </div>
+        <img 
+          src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800&h=600"
+          alt="Business analytics dashboard"
+          class="rounded-xl shadow-2xl w-full h-auto"
+        />
       </div>
       
-      <div class="grid grid-cols-2 gap-6">
-        {stats.map((stat) => (
-          <div class="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-8 text-center hover:bg-white/10 transition-all duration-300 animate-on-scroll">
-            <div class="text-3xl md:text-4xl font-bold text-emerald-400 mb-2">{stat.value}</div>
-            <div class="text-slate-400">{stat.label}</div>
+      <div class="space-y-4">
+        {industries.map((industry, index) => (
+          <div class="group backdrop-blur-xl bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 hover:border-white/20 transition-all duration-300 animate-on-scroll animate-on-scroll-delay-{(index + 1) * 50}">
+            <div class="flex items-center justify-between">
+              <div>
+                <h3 class="text-lg font-semibold mb-1">{industry.name}</h3>
+                <p class="text-sm text-stone-400">{industry.clients} clients</p>
+              </div>
+              <div class="text-2xl font-bold text-amber-400">
+                {industry.growth}
+              </div>
+            </div>
           </div>
         ))}
       </div>

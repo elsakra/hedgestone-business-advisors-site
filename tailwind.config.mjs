@@ -1,4 +1,3 @@
-/** @type {import('tailwindcss').Config} */
 export default {
   content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
   theme: {
@@ -7,17 +6,8 @@ export default {
         sans: ['Inter', 'system-ui', 'sans-serif'],
       },
       colors: {
-        'emerald': {
-          600: '#059669',
-          700: '#047857'
-        },
-        'slate': {
-          50: '#f8fafc',
-          400: '#94a3b8',
-          600: '#475569',
-          800: '#1e293b',
-          900: '#0f172a',
-          950: '#020617'
+        stone: {
+          25: '#FCFCFB',
         }
       },
       animation: {
