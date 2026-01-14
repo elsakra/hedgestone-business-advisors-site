@@ -1,144 +1,26 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Header from '../components/Header.astro';
 import Hero from '../components/Hero.astro';
 import Services from '../components/Services.astro';
-import Contact from '../components/Contact.astro';
+import About from '../components/About.astro';
+import Process from '../components/Process.astro';
+import Testimonials from '../components/Testimonials.astro';
+import CTA from '../components/CTA.astro';
 import Footer from '../components/Footer.astro';
 ---
 
-<Layout title="HedgeStone Business Advisors - Strategic Business Consulting & Advisory Services">
-  <Header />
+<Layout title="HedgeStone Business Advisors - Strategic Growth Partners">
   <main>
     <Hero />
-    
-    <!-- Stats Section -->
-    <section class="section-padding bg-gray-800">
-      <div class="container-custom">
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
-          <div class="animate-fade-in">
-            <div class="text-4xl lg:text-5xl font-bold text-primary-400 mb-2">200+</div>
-            <div class="text-gray-300 font-medium">Clients Served</div>
-          </div>
-          <div class="animate-fade-in animate-stagger-1">
-            <div class="text-4xl lg:text-5xl font-bold text-primary-400 mb-2">$50M+</div>
-            <div class="text-gray-300 font-medium">Revenue Generated</div>
-          </div>
-          <div class="animate-fade-in animate-stagger-2">
-            <div class="text-4xl lg:text-5xl font-bold text-primary-400 mb-2">98%</div>
-            <div class="text-gray-300 font-medium">Success Rate</div>
-          </div>
-          <div class="animate-fade-in animate-stagger-3">
-            <div class="text-4xl lg:text-5xl font-bold text-primary-400 mb-2">15+</div>
-            <div class="text-gray-300 font-medium">Years Experience</div>
-          </div>
-        </div>
-      </div>
-    </section>
-    
     <Services />
-    
-    <!-- Why Choose Us Section -->
-    <section class="section-padding bg-gray-900">
-      <div class="container-custom">
-        <div class="text-center mb-16">
-          <h2 class="text-4xl lg:text-5xl font-bold mb-6 animate-fade-in">
-            Why Choose 
-            <span class="text-primary-400">HedgeStone?</span>
-          </h2>
-          <p class="text-xl text-gray-300 max-w-3xl mx-auto animate-fade-in animate-stagger-1">
-            We combine deep industry expertise with proven methodologies to deliver measurable results for your business.
-          </p>
-        </div>
-        
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          <div class="animate-fade-in">
-            <div class="space-y-8">
-              <div class="flex items-start space-x-4">
-                <div class="w-12 h-12 bg-primary-500 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-                  </svg>
-                </div>
-                <div>
-                  <h3 class="text-xl font-semibold text-white mb-2">Proven Track Record</h3>
-                  <p class="text-gray-400 leading-relaxed">Over 15 years of experience helping businesses achieve sustainable growth and operational excellence across diverse industries.</p>
-                </div>
-              </div>
-              
-              <div class="flex items-start space-x-4">
-                <div class="w-12 h-12 bg-green-500 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
-                  </svg>
-                </div>
-                <div>
-                  <h3 class="text-xl font-semibold text-white mb-2">Expert Team</h3>
-                  <p class="text-gray-400 leading-relaxed">Our consultants bring Fortune 500 experience and specialized knowledge to solve your most complex business challenges.</p>
-                </div>
-              </div>
-              
-              <div class="flex items-start space-x-4">
-                <div class="w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                  </svg>
-                </div>
-                <div>
-                  <h3 class="text-xl font-semibold text-white mb-2">Results-Driven Approach</h3>
-                  <p class="text-gray-400 leading-relaxed">We focus on measurable outcomes and ROI, ensuring every recommendation translates into tangible business value.</p>
-                </div>
-              </div>
-              
-              <div class="flex items-start space-x-4">
-                <div class="w-12 h-12 bg-purple-500 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
-                  </svg>
-                </div>
-                <div>
-                  <h3 class="text-xl font-semibold text-white mb-2">Long-term Partnership</h3>
-                  <p class="text-gray-400 leading-relaxed">We build lasting relationships with our clients, providing ongoing support and guidance as your business evolves.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div class="animate-fade-in animate-stagger-1">
-            <div class="bg-gradient-to-br from-primary-500/20 to-purple-500/20 rounded-2xl p-8">
-              <div class="text-center mb-8">
-                <h3 class="text-2xl font-semibold text-white mb-4">Client Success Story</h3>
-                <div class="w-16 h-16 bg-white rounded-full mx-auto mb-4 flex items-center justify-center">
-                  <span class="text-2xl font-bold text-gray-900">TM</span>
-                </div>
-              </div>
-              
-              <blockquote class="text-lg text-gray-300 italic text-center mb-6">
-                "HedgeStone transformed our operations and helped us achieve 150% revenue growth in just 18 months. Their strategic insights were invaluable."
-              </blockquote>
-              
-              <div class="text-center">
-                <div class="text-white font-semibold">Sarah Johnson</div>
-                <div class="text-gray-400">CEO, TechMark Solutions</div>
-              </div>
-              
-              <div class="mt-6 grid grid-cols-2 gap-4 text-center">
-                <div>
-                  <div class="text-2xl font-bold text-primary-400">150%</div>
-                  <div class="text-sm text-gray-400">Revenue Growth</div>
-                </div>
-                <div>
-                  <div class="text-2xl font-bold text-green-400">18</div>
-                  <div class="text-sm text-gray-400">Months</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-    <Contact />
+    <About />
+    <Process />
+    <Testimonials />
+    <CTA />
+    <Footer />
   </main>
-  <Footer />
 </Layout>
+
+<script>
+  import '../scripts/animations.ts';
+</script>
