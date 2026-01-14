@@ -4,7 +4,7 @@ export interface Props {
   description?: string;
 }
 
-const { title, description = 'HedgeStone Business Advisors - Strategic guidance for growing businesses' } = Astro.props;
+const { title, description = 'HedgeStone Business Advisors - Strategic advisory services for discerning business leaders' } = Astro.props;
 ---
 
 <!DOCTYPE html>
@@ -22,17 +22,13 @@ const { title, description = 'HedgeStone Business Advisors - Strategic guidance 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     
-    <!-- Open Graph -->
+    <!-- SEO -->
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="HedgeStone Business Advisors" />
+    <meta name="twitter:card" content="summary_large_image" />
   </head>
   <body>
     <slot />
   </body>
 </html>
-
-<style is:global>
-  @import '../styles/global.css';
-</style>

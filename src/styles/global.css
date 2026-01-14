@@ -12,31 +12,57 @@
   }
 }
 
-@layer utilities {
+/* Animations */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.animate-on-scroll.animate-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger animation delays */
+.animate-on-scroll:nth-child(1) { transition-delay: 0ms; }
+.animate-on-scroll:nth-child(2) { transition-delay: 100ms; }
+.animate-on-scroll:nth-child(3) { transition-delay: 200ms; }
+.animate-on-scroll:nth-child(4) { transition-delay: 300ms; }
+.animate-on-scroll:nth-child(5) { transition-delay: 400ms; }
+.animate-on-scroll:nth-child(6) { transition-delay: 500ms; }
+
+@media (prefers-reduced-motion: reduce) {
   .animate-on-scroll {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1), transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  .animate-on-scroll.animate-in {
     opacity: 1;
-    transform: translateY(0);
+    transform: none;
+    transition: none;
   }
-  
-  .text-gradient {
-    @apply bg-gradient-to-r from-amber-600 to-rose-600 bg-clip-text text-transparent;
-  }
-  
-  .glass-effect {
-    @apply backdrop-blur-xl bg-white/10 border border-white/20;
-  }
-  
-  @media (prefers-reduced-motion: reduce) {
-    .animate-on-scroll {
-      opacity: 1;
-      transform: none;
-      transition: none;
-    }
-  }
+}
+
+/* Custom underline animation */
+.link-underline {
+  position: relative;
+  display: inline-block;
+}
+
+.link-underline::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: currentColor;
+  transition: width 0.3s ease;
+}
+
+.link-underline:hover::after {
+  width: 100%;
+}
+
+/* Glass effect */
+.glass {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
 }

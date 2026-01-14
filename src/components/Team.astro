@@ -1,0 +1,59 @@
+---
+const team = [
+  {
+    name: "Michael Harrison",
+    role: "Managing Partner",
+    bio: "Former McKinsey partner with 25+ years advising Fortune 500 executives on strategic transformation.",
+    image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop"
+  },
+  {
+    name: "Sarah Chen",
+    role: "Partner, M&A",
+    bio: "Led 50+ transactions totaling $5B+ in enterprise value. Former Goldman Sachs Managing Director.",
+    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop"
+  },
+  {
+    name: "David Rothstein",
+    role: "Partner, Operations",
+    bio: "Operational excellence expert who has driven $500M+ in value creation across portfolio companies.",
+    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop"
+  },
+  {
+    name: "Elena Rodriguez",
+    role: "Partner, Digital",
+    bio: "Technology strategist specializing in digital transformation and emerging technology adoption.",
+    image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=400&fit=crop"
+  }
+];
+---
+
+<section id="team" class="py-24 md:py-32 lg:py-40 bg-slate-50">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl md:text-5xl font-bold tracking-tight text-slate-900 mb-4 animate-on-scroll">
+        Leadership Team
+      </h2>
+      <p class="text-xl text-slate-600 max-w-3xl mx-auto animate-on-scroll">
+        World-class advisors with proven track records of creating exceptional value.
+      </p>
+    </div>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      {team.map((member) => (
+        <div class="group animate-on-scroll">
+          <div class="relative overflow-hidden rounded-2xl mb-6">
+            <img 
+              src={member.image} 
+              alt={member.name}
+              class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          </div>
+          <h3 class="text-xl font-semibold text-slate-900 mb-1">{member.name}</h3>
+          <p class="text-emerald-600 font-medium mb-3">{member.role}</p>
+          <p class="text-slate-600 text-sm leading-relaxed">{member.bio}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
